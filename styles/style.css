@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body { 
+    background: #080808;
+    color: white;
+}
+header{
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;  /* keeps the widget always on screen */
+    z-index: 999; /* layer on top */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 150px;
+}
+.headerlogo{
+    text-decoration: none;
+    color: #3a6cf4;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: #3a6cf4;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 13px;
+    
+}
+.navigation a:hover{
+    color: #601cfc
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.mainsection {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; /* parralax effect */
+  
+}
+
+.mainsection h2{
+    font-size: 1.4em;
+    font-weight: 500;
+
+}
+.mainsection h2 span{
+    /* span is inline by default, and inline cant have margin/padding, so we change
+    it to inline-block  */
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 2.5em;
+    color: #4e9eff;
+    font-weight: bold;
+
+}
+
+.mainsection h3{
+    font-size: 2em;
+    font-weight: 700;
+    word-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.mainbtn {
+    text-decoration: none;
+    background-color: #3a6cf4;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: white;
+    display: inline-block;
+    padding: 0.9375em 2.187em;
+    letter-spacing: 2px;
+    border-radius: 25px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+.mainbtn:hover{
+    background-color: #2e63f7;
+    transform: scale(1.05);
+}
+.mainsection .socialicons a{
+    color: #ffffff;
+    font-size: 1.7em;
+    padding-right: 35px;
+    padding-left: 10px;
+    justify-content: center;
+}
+
+.aboutsection{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.aboutsection #describe{
+    padding: 5px 0 5px 10px;
+
+}
+.line-1 {
+    height: .1em;
+    background: #2e63f7;
+    width: 15em;
+    margin-left: 10px;
+  }
+.line-2 {
+    height: .1em;
+    background: #2e63f7;
+    margin-right: 10em;
+    margin-left: 10em;
+    margin-top: 1em;
+  }
+.tabs{
+    padding-top: 2em;
+    justify-content: space-evenly   ;
+    display: flex;
+    text-align: center;
+
+}
+.tab-links{
+    color: #ffffff;
+    font-size: 1.2em;
+    text-align: center;
+    cursor: pointer;
+    }
+.tabs .active-link{
+    color: #601cfc;
+}
+
+.tabDetails ul{
+    transition: opacity 1s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+.tabDetails li{
+    font-size: 15px; 
+}
+.tabDetails li span{
+    color: #4e9eff;
+    font-size: 25px;
+}
+.tabDetails .active-detail{
+    display: inline;
+    text-align: center;
+    opacity: 1;
+    height: auto;
+}

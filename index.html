@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Abo Al-Fadel's Protfolio</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="headerlogo"> Abo Al-Fadel </a>
+        <nav class="navigation">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="mainsection">
+        <div>
+            <h2>
+                Hello, I am Axel<br>
+                <span>
+                    Software Devoloper
+                </span>
+            </h2>
+            <h3>& CS Student</h3>
+            <a href="#projects" class="mainbtn">View Work</a>
+            <div class="socialicons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="aboutsection">
+        <div>
+            <h2>About Me</h2>
+            <p id="describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, corporis quisquam officiis culpa sed impedit obcaecati maxime? Architecto alias, cupiditate sequi voluptatum nam suscipit corporis officiis doloremque cumque doloribus dolor.</p>
+            <div class="line-1"></div>
+            <div class="tabs">
+                <p class="tab-links" onclick="activate('expirence')">Expirence</p>
+                <p class="tab-links active-link"  onclick="activate('skills')">Skills</p>
+                <p class="tab-links" onclick="activate('education')">Education</p>
+            </div>
+            <div class="line-2"></div>
+            
+            <div class="tabDetails">
+                <ul id="skills" class="active-detail">
+                    <li>
+                        <span>Python Dev.</span><br>3+ years of expirence in webscraping, automation & dealing with APIs
+                    </li>
+                    <li>
+                        <span>Mobile devolopment</span><br>8+ months of expirence in mobile devolopment (including 5+ months of expirence in flutter, 3+ in Kotlin) 
+                    </li>
+                    <li>
+                        <span>C++ & C#</span><br>12+ months of expirence in C# & C++ from the UoT (including game devolopment)
+                        
+                    </li>
+                </ul>
+            </div>
+            <div class="tabDetails">
+                <ul id="expirence">
+                    <li>
+                        <span>Python2</span><br>3+ years of expirence in webscraping, automation & dealing with APIs
+                    </li>
+                    <li>
+                        <span>Mobile devolopment</span><br>8+ months of expirence in mobile devolopment (including 5+ months of expirence in flutter, 3+ in Kotlin) 
+                    </li>
+                    <li>
+                        <span>C++ & C#</span><br>12+ months of expirence in C# & C++ including game devolopment
+                    </li>
+                </ul>
+            </div>
+            <div class="tabDetails">
+                <ul id="education">
+                    <li>
+                        <span>UOT - CS</span><br> 2nd grade student in the Univeristy of Technology, Computer Science Dep. (MUltimedia Branch)  
+                    </li>
+                    <li>
+                        <span>DNA Scholarship</span><br> 3 months 
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+<script>
+    var tabs = document.getElementsByClassName("tab-links")
+    var tabDetails = document.getElementsByClassName("tabDetails")
+    function activate(tabname){
+        if (event.currentTarget.classList.contains("active-link")){    } //do nothing
+        else{
+        for (tablink of tabs){
+            tablink.classList.remove("active-link")
+        }
+        for (tabdetail of tabDetails){
+            var uls = tabdetail.getElementsByTagName("ul")
+            for (ul of uls){
+                ul.classList.remove("active-detail")
+            }
+        }
+        document.getElementById(tabname).classList.add('active-detail')
+        event.currentTarget.classList.add('active-link')
+}
+    }
+</script>
+</body>
+</html>
