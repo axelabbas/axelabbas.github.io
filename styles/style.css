@@ -152,6 +152,8 @@ section {
 }
 
 .tabDetails li{
+    padding-top: 1.2em;
+
     font-size: 15px; 
 }
 .tabDetails li span{
