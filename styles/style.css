@@ -253,8 +253,7 @@ a {
 }
 
 @media (min-width: 900px){
-    body {
-    }
+
     .project {
         width: auto;
         margin: auto;
