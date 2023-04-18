@@ -10,6 +10,7 @@ body {
     background: #080808;
     color: white;
 }
+
 header{
     background-color: #f0f0f0;
     width: 100%;
@@ -18,28 +19,22 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 150px;
+    padding: 10px 50px;
 }
 .headerlogo{
     text-decoration: none;
     color: #3a6cf4;
     text-transform: capitalize;
     font-weight: bold;
-    font-size: 1.8em;
+    font-size: 1.5em;
 }
 
 .navigation a{
-    text-decoration: none;
-    color: #3a6cf4;
-    font-size: 1.1em;
-    font-weight: 500;
-    padding-left: 13px;
-    
+    display: none;    
 }
 .navigation a:hover{
     color: #601cfc
 }
-
 
 
 .mainsection {
@@ -255,28 +250,62 @@ a {
     transform: scale(1);
 }
 .projectsGrid {
-    grid-gap: 100px 200px;
+    grid-column-gap: 5rem;
 }
 section {
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 @media (min-width: 900px){
+    .navigation a{
+        display: inline;
+        text-decoration: none;
+        color: #3a6cf4;
+        font-size: 1.1em;
+        font-weight: 500;
+        padding-left: 13px;
+        
+    }
+    header{
+        background-color: #f0f0f0;
+        width: 100%;
+        position: fixed;  /* keeps the widget always on screen */
+        z-index: 999; /* layer on top */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 150px;
+    }
+    .headerlogo{
+        text-decoration: none;
+        color: #3a6cf4;
+        text-transform: capitalize;
+        font-weight: bold;
+        font-size: 1.8em;
+    }
+    
+    .navigation a{
+        text-decoration: none;
+        color: #3a6cf4;
+        font-size: 1.1em;
+        font-weight: 500;
+        padding-left: 13px;
+        
+    }
+    .navigation a:hover{
+        color: #601cfc
+    }
 
     .project {
         width: auto;
         margin: auto;
         padding: 10px;
     }
-    section {
-        padding: 100px 200px;
-    }
     .projectsGrid{
         width: 50rem;
         display: grid;
         place-content: center;
 
-        gap: 2rem;      
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: min-content;
     }
