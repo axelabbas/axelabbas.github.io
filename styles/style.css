@@ -40,10 +40,13 @@ header{
 .mainsection {
     width: 100%;
     min-height: 100vh;
+    padding: 0 1.5em;
     display: flex;
     align-items: center;
     background: url(../images/background.jpg) no-repeat;
     background-size: cover;
+    text-align: center;    
+    justify-content: center;
     background-position: center center;
     background-attachment: fixed; /* parralax effect */
   
@@ -89,22 +92,26 @@ header{
     background-color: #2e63f7;
     transform: scale(1.05);
 }
-.mainsection .socialicons a{
+.mainsection .socialicons {
     color: #ffffff;
     font-size: 1.7em;
-    padding-right: 35px;
-    padding-left: 10px;
-    justify-content: center;
-}
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    }
 
 .aboutsection{
+    padding: 0 1.5em;
     color: white;
     display: flex;
     justify-content: center;
 }
 .aboutsection #describe{
-    padding: 5px 0 5px 10px;
-
+    padding: 1em 1em;
+}
+#describe span{
+        color: #4e9eff;
 }
 .line-1 {
     height: .1em;
@@ -257,6 +264,11 @@ section {
 }
 
 @media (min-width: 900px){
+    .mainsection{
+        text-align: left;    
+        justify-content: left;
+
+    }
     .navigation a{
         display: inline;
         text-decoration: none;
