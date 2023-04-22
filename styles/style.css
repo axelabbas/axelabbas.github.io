@@ -40,7 +40,6 @@ header{
 .mainsection {
     width: 100%;
     min-height: 100vh;
-    padding: 0 1.5em;
     display: flex;
     align-items: center;
     background: url(../images/background.jpg) no-repeat;
@@ -260,15 +259,29 @@ a {
     grid-column-gap: 5rem;
 }
 section {
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 @media (min-width: 900px){
+    .mainsection .socialicons {
+        color: #ffffff;
+        font-size: 1.7em;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        width: 35%;        
+        }
+    .aboutsection {
+        padding-top: 10px;
+    }
     .mainsection{
+    padding: 0 3.5em;
+        
         text-align: left;    
         justify-content: left;
 
     }
+    
     .navigation a{
         display: inline;
         text-decoration: none;
@@ -308,18 +321,10 @@ section {
         color: #601cfc
     }
 
-    .project {
-        width: auto;
-        margin: auto;
-        padding: 10px;
-    }
     .projectsGrid{
-        width: 50rem;
         display: grid;
         place-content: center;
-
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: min-content;
     }
     .grid-col-span-2 {
         grid-column: span 2;
