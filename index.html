@@ -2,284 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
-    <link rel="stylesheet" href="styles/style.css" />
-    <title>Abo Al-Fadel's Protfolio</title>
-  </head> 
+    <title>Under Construction</title>
+    <style>
+      body {
+        text-align: center;
+        width: 100%;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: Arial, sans-serif;
+        display: grid;
+        margin: 0;
+      }
+      .main {
+        place-self: center;
+      }
+      h1 {
+        color: #333;
+      }
+      p {
+        color: #666;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      button:hover {
+        background-color: #2980b9;
+      }
+    </style>
+  </head>
   <body>
-    <header>
-      <a href="#" class="headerlogo"> Abo Al-Fadel </a>
-      <nav class="navigation">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-    <section class="mainsection">
-      <div class="mainText">
-        <h2>
-          Hello, I am Axel<br />
-          <span> Software Devoloper </span>
-        </h2>
-        <h3>& CS Student</h3>
-        <a href="#projects" class="mainbtn">View Work</a>
-        <div class="socialicons">
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-github"></i></a>
-          <a href="#"><i class="fa-brands fa-telegram"></i></a>
-        </div>
-      </div>
-    </section>
+    <div class="main">
+      <h1>Still working on it...</h1>
+      <p>check the current prototype!</p>
 
-    <section class="aboutsection" id="about">
-      <div>
-        <h2 style="padding-top: 50px">About Me</h2>
-        <p id="describe">
-          I am a <span> college student </span> currently studying <span>computer science. </span> I have
-          always had a  strong interest in <span> technology and programming </span>, and I am
-          thrilled to be pursuing my passion in my studies, I am constantly
-          looking for ways of <span>improvement </span> to my skills and knowledge in my field as I
-          have a strong passion for my major and I am eager to continue <span> learning </span>
-          and growing as a software developer.
-        </p>
-        <div class="line-1"></div>
-      <section class="skillssection" id="skills">
-
-        <div class="tabs">
-          <p class="tab-links" onclick="activate('expirence')">Expirence</p>
-          <p class="tab-links active-link" onclick="activate('skills')">
-            Skills
-          </p>
-          <p class="tab-links" onclick="activate('education')">Education</p>
-        </div>
-        <div class="line-2"></div>
-
-        <div class="tabDetails">
-          <ul id="skills" class="active-detail">
-            <li>
-              <span>Automation</span><br />Tools including interacting with the
-              API of websites in order to retrieve or manipulate data to
-              automate user actions on the website using Python.
-            </li>
-            <li>
-              <span>Mobile App. Dev.</span><br />Creating fully functional
-              multiplatform applications, including Frontend using Flutter and
-              Backend using Nodejs
-            </li>
-            <li>
-              <span>OOP</span><br />Familiar with OOP concepts and principles, especially in C# and C++ languages
-            </li>
-          </ul>
-        </div>
-        <div class="tabDetails">
-          <ul id="expirence">
-            <li>
-              <span>Python Dev.</span><br />
-              3+ years of expirence in webscraping, automation & dealing with
-              APIs
-            </li>
-            <li>
-              <span>Flutter & Kotlin</span><br />8+ months of expirence in
-              mobile devolopment (including 5+ months of expirence in flutter,
-              3+ in Kotlin)
-            </li>
-            <li>
-              <span>C++ & C#</span><br />12+ months of expirence in C# & C++
-              including game devolopment
-            </li>
-          </ul>
-        </div>
-        <div class="tabDetails">
-          <ul id="education">
-            <li>
-              <span>University Of Technology - Computer Science</span><br />
-              2nd grade student in the Univeristy of Technology, Computer
-              Science Dep. (Multimedia Branch)
-            </li>
-            <li>
-              <span>DNA Scholarship</span><br />
-              2 months scholarship learning about mobile devolopment using
-              Flutter, MySql Databases, NodeJs Servers. in sponsor of Google
-              Devolopers Group, Earthlink, And Zain IQ
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    </section>
-
-
-    <section class="projectssection"  id="projects">
-      <div>
-        <div class="title">
-          <h1>Projects</h1>
-          <div class="line-3"></div>
-        </div>
-
-        <div class="projectsGrid">
-          <div class="project grid-col-span-2" id="image1">
-            <a href="https://github.com/maryamfouad/Matjar" target="_blank">
-              <!-- <img src="images/omeBot.png" alt="">     -->
-              <div class="projectInfo">
-                <div class="projectTitle">.</div>
-
-                <div class="projectAbout">
-                  E-commerece application for selling and buying products, using flutter for the frontend and nodejs/mysql for the backend
-                </div>
-              </div>
-              <div class="projectTitleB4">Matjar</div>
-            </a>
-          </div>
-          <div class="project grid-col-span-2" id="image2">
-            <a href="#projects">
-              <!-- <img src="images/Matjar.png" alt="">     -->
-              <div class="projectInfo">
-                <div class="projectTitle">.</div>
-                <div class="projectAbout">
-                  application built with flutter to automate the process of meeting new people on omegle using it's API calls
-                </div>
-              </div>
-              <div class="projectTitleB4">OmeBot</div>
-            </a>
-          </div>
-          <div class="project" id="image3">
-            <!-- <img src="images/black.jpg" alt="">     -->
-            <div class="projectInfo">
-              <div class="projectTitle">.</div>
-              <div class="projectAbout">⏳</div>
-            </div>
-            <div class="projectTitleB4">Soon</div>
-          </div>
-          <div class="project grid-col-span-2" id="image4">
-            <a href="https://github.com/axelabbas/video-to-ascii" target="_blank">
-              <!-- <img src="images/image.png" alt="">    -->
-              <div class="projectInfo">
-                <div class="projectTitle">.</div>
-
-                <div class="projectAbout">
-                  Python project that converts videos to an Ascii art version of the same video.
-                </div>
-              </div>
-              <div class="projectTitleB4">Video To Ascii</div>
-            </a>
-          </div>
-          <div class="project" id="image5">
-            <!-- <img src="images/black.jpg" alt="">     -->
-            <div class="projectInfo">
-              <div class="projectTitle">.</div>
-
-              <div class="projectAbout">⏳</div>
-            </div>
-            <div class="projectTitleB4">Soon</div>
-          </div>
-          <!-- <img src="images/image.png" alt="" class="project grid-col-span-2" id="image1">
-                <img src="images/image.png" alt="" class="project grid-col-span-2" id="image2">
-                <img src="images/image.png" alt="" class="project" id="image3">
-                <img src="images/image.png" alt="" class="project" id="image4">
-                <img src="images/image.png" alt="" class="project" id="image5"> -->
-        </div>
-      </div>
-    </section>
-
-
-
-    <section id="projects2">
-      <div>
-        <div class="title">
-          <h1>Projects</h1>
-          <div class="line-3"></div>
-        </div>
-
-        <div class="projectsGrid">
-          <div class="project grid-col-span-2" id="image1">
-            <a href="https://github.com/maryamfouad/Matjar" target="_blank">
-              <!-- <img src="images/omeBot.png" alt="">     -->
-              <div class="projectInfo">
-                <div class="projectTitle">.</div>
-
-                <div class="projectAbout">
-                  E-commerece application for selling and buying products, using flutter for the frontend and nodejs/mysql for the backend
-                </div>
-              </div>
-              <div class="projectTitleB4">Matjar</div>
-            </a>
-          </div>
-          <div class="project grid-col-span-2" id="image2">
-            <a href="#projects">
-              <!-- <img src="images/Matjar.png" alt="">     -->
-              <div class="projectInfo">
-                <div class="projectTitle">.</div>
-                <div class="projectAbout">
-                  application built with flutter to automate the process of meeting new people on omegle using it's API calls
-                </div>
-              </div>
-              <div class="projectTitleB4">OmeBot</div>
-            </a>
-          </div>
-          <div class="project" id="image3">
-            <!-- <img src="images/black.jpg" alt="">     -->
-            <div class="projectInfo">
-              <div class="projectTitle">.</div>
-              <div class="projectAbout">⏳</div>
-            </div>
-            <div class="projectTitleB4">Soon</div>
-          </div>
-          <div class="project grid-col-span-2" id="image4">
-            <a href="https://github.com/axelabbas/video-to-ascii" target="_blank">
-              <!-- <img src="images/image.png" alt="">    -->
-              <div class="projectInfo">
-                <div class="projectTitle">.</div>
-
-                <div class="projectAbout">
-                  Python project that converts videos to an Ascii art version of the same video.
-                </div>
-              </div>
-              <div class="projectTitleB4">Video To Ascii</div>
-            </a>
-          </div>
-          <div class="project" id="image5">
-            <!-- <img src="images/black.jpg" alt="">     -->
-            <div class="projectInfo">
-              <div class="projectTitle">.</div>
-
-              <div class="projectAbout">⏳</div>
-            </div>
-            <div class="projectTitleB4">Soon</div>
-          </div>
-          <!-- <img src="images/image.png" alt="" class="project grid-col-span-2" id="image1">
-                <img src="images/image.png" alt="" class="project grid-col-span-2" id="image2">
-                <img src="images/image.png" alt="" class="project" id="image3">
-                <img src="images/image.png" alt="" class="project" id="image4">
-                <img src="images/image.png" alt="" class="project" id="image5"> -->
-        </div>
-      </div>
-    </section>
-
+      <button style="border-radius: 12px;" onclick="redirectToAnotherPage()">Prototype</button>
+    </div>
 
     <script>
-      var tabs = document.getElementsByClassName("tab-links");
-      var tabDetails = document.getElementsByClassName("tabDetails");
-      function activate(tabname) {
-        if (event.currentTarget.classList.contains("active-link")) {
-        } //do nothing
-        else {
-          for (tablink of tabs) {
-            tablink.classList.remove("active-link");
-          }
-          for (tabdetail of tabDetails) {
-            var uls = tabdetail.getElementsByTagName("ul");
-            for (ul of uls) {
-              ul.classList.remove("active-detail");
-            }
-          }
-          document.getElementById(tabname).classList.add("active-detail");
-          event.currentTarget.classList.add("active-link");
-        }
+      function redirectToAnotherPage() {
+        window.location.href = "index2.html"; // Change 'another_page.html' to the actual filename
       }
     </script>
   </body>
